@@ -1,0 +1,86 @@
+/* Write your CSS code here */
+.home-container {
+  font-family: 'Roboto';
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.home-image-small-device {
+  display: none;
+}
+.text-section {
+  width: 55%;
+}
+.home-heading {
+  font-size: 40px;
+  color: #1e293b;
+  text-align: left;
+}
+.home-description {
+  font-size: 18px;
+  color: #64748b;
+  text-align: left;
+}
+.shop-now-button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #0967d2;
+}
+.home-image-section-small {
+  width: 100%;
+}
+.home-image-section {
+  width: 40%;
+  text-align: right;
+}
+.home-image {
+  width: 100%;
+  max-width: 450px;
+}
+/* --------------------------------------------------- */
+@media (width <= 768px) {
+  .home-section {
+    width: 100%;
+  }
+  .text-section {
+    width: 100%;
+  }
+  .home-image-small-device {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+
+  .home-image-section {
+    display: none;
+  }
+  .home-heading {
+    text-align: center;
+  }
+  .home-description {
+    text-align: center;
+  }
+  .home-image-section-small {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop-now-button-container{
+    text-align: center;
+  }
+}

@@ -1,0 +1,84 @@
+/* Write your CSS code here */
+.main-nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container-large {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Roboto';
+  overflow: hidden;
+}
+.nav-container-small {
+  display: none;
+}
+.nav-website-logo {
+  width: 200px;
+}
+.nav-details-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #475569;
+  list-style-type: none;
+}
+.logout-button {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0b69ff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+.link-element {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ------------------------------------------------- */
+@media (width <= 768px) {
+  .nav-container-large {
+    display: none;
+  }
+  .nav-website-logo {
+    width: 150px;
+  }
+  .nav-container-small {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-logo-logout-img-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .button-img-section {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #e6f6ff;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+  .nav-img-button {
+    width: 30px;
+  }
+}
